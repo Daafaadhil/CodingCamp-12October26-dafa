@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-**Life Dashboard** is a browser-based productivity tool built with pure HTML, CSS, and Vanilla JavaScript. No frameworks, no backend, no setup — just open and use.
+**Life Dashboard** is a browser-based productivity tool built with pure HTML, CSS, and Vanilla JavaScript. No frameworks, no backend, no setup just open and use.
 
 It combines four core tools in one place:
 
