@@ -1,10 +1,10 @@
-# 🌿 To-Do List Life Dashboard
+# To-Do List Life Dashboard
 
 > A clean, minimal personal dashboard to help you stay organized, focused, and productive — all in one page.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 **Life Dashboard** is a browser-based productivity tool built with pure HTML, CSS, and Vanilla JavaScript. No frameworks, no backend, no setup — just open and use.
 
@@ -19,7 +19,7 @@ All data is stored locally in the browser using the **LocalStorage API**, so eve
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Layer     | Technology                              |
 | --------- | --------------------------------------- |
@@ -31,41 +31,41 @@ All data is stored locally in the browser using the **LocalStorage API**, so eve
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CodingCamp-12October26-dafa/
-├── index.html          # Main HTML file
+├── index.htm
 ├── css/
-│   └── style.css       # All styles (single CSS file)
+│   └── style.cs
 ├── js/
-│   └── app.js          # All logic (single JS file)
+│   └── app.j
 ├── .kiro/
 │   └── steering/
-│       └── project.md  # Project documentation
+│       └── project.md
 └── .gitignore
 ```
 
 ---
 
-## ✨ Features
+## eatures
 
-### 🕐 Greeting & Clock
+### reeting & Clock
 
 - Displays live time (HH:MM:SS) and full date
 - Greeting message changes based on time of day:
-  - 🌅 **Good Morning** — 05:00 to 11:59
-  - ☀️ **Good Afternoon** — 12:00 to 16:59
-  - 🌆 **Good Evening** — 17:00 to 20:59
-  - 🌙 **Good Night** — 21:00 to 04:59
+  - **Good Morning** — 05:00 to 11:59
+  - **Good Afternoon** — 12:00 to 16:59
+  - **Good Evening** — 17:00 to 20:59
+  - **Good Night** — 21:00 to 04:59
 
-### ⏱️ Focus Timer
+### Focus Timer
 
 - Fixed **25-minute** Pomodoro timer
 - **Start**, **Stop**, and **Reset** controls
 - Alert notification when the session ends
 
-### ✅ To-Do List
+### To-Do List
 
 - Add new tasks with a single click or Enter key
 - Edit existing tasks inline
@@ -73,17 +73,17 @@ CodingCamp-12October26-dafa/
 - Delete tasks individually
 - All tasks saved to **LocalStorage**
 
-### 🔗 Quick Links
+### Quick Links
 
 - Add custom links with a name and URL
 - Auto-detects icon based on the website (Google, YouTube, GitHub, etc.)
-- Default links: Google 🔍, YouTube 📺, GitHub 💻
+- Default links: Google, YouTube, GitHub
 - Delete links anytime
 - Links saved to **LocalStorage**
 
 ---
 
-## 🎨 Design System
+## Design System
 
 | Property      | Value                                |
 | ------------- | ------------------------------------ |
@@ -95,25 +95,17 @@ CodingCamp-12October26-dafa/
 
 ---
 
-## 🚀 Challenges Implemented
+## Challenges Implemented
 
-| #   | Challenge             | Description                                                      |
-| --- | --------------------- | ---------------------------------------------------------------- |
-| 1   | 🌗 Light / Dark Mode  | Toggle between light and green-dark theme, saved to localStorage |
-| 2   | ✏️ Custom Name        | User can set their name to personalize the greeting              |
-| 3   | 🚫 Prevent Duplicates | Warning shown if a task with the same name already exists        |
-
----
-
-## 🌐 Deployment
-
-- **Platform:** GitHub Pages
-- **Repository:** [github.com/Daafaadhil/CodingCamp-12October26-dafa](https://github.com/Daafaadhil/CodingCamp-12October26-dafa)
-- **Live URL:** [daafaadhil.github.io/CodingCamp-12October26-dafa](https://daafaadhil.github.io/CodingCamp-12October26-dafa)
+| #   | Challenge          | Description                                                      |
+| --- | ------------------ | ---------------------------------------------------------------- |
+| 1   | Light / Dark Mode  | Toggle between light and green-dark theme, saved to localStorage |
+| 2   | Custom Name        | User can set their name to personalize the greeting              |
+| 3   | Prevent Duplicates | Warning shown if a task with the same name already exists        |
 
 ---
 
-## 👤 Author
+## Author
 
 **Daafaadhil**
 RevoU Coding Camp — October 2026
