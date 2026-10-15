@@ -9,7 +9,6 @@ const themeToggle = document.getElementById("themeToggle");
 // Timer Elements
 const timerMinutesEl = document.getElementById("timerMinutes");
 const timerSecondsEl = document.getElementById("timerSeconds");
-const timerDurationEl = document.getElementById("timerDuration");
 const startTimerBtn = document.getElementById("startTimer");
 const stopTimerBtn = document.getElementById("stopTimer");
 const resetTimerBtn = document.getElementById("resetTimer");
@@ -34,9 +33,8 @@ const closeModalBtn = document.getElementById("closeModal");
 
 // ==================== State Variables ====================
 let timerInterval = null;
-let timerSeconds = 5 * 60; // Default 5 minutes in seconds
+let timerSeconds = 25 * 60; // 25 minutes in seconds
 let isTimerRunning = false;
-let selectedDuration = 5; // Default selected duration in minutes
 
 // ==================== Local Storage Keys ====================
 const STORAGE_KEYS = {
@@ -167,18 +165,8 @@ function stopTimer() {
 
 function resetTimer() {
   stopTimer();
-  timerSeconds = selectedDuration * 60;
+  timerSeconds = 25 * 60;
   updateTimerDisplay();
-}
-
-function changeTimerDuration() {
-  const duration = parseInt(timerDurationEl.value);
-  selectedDuration = duration;
-
-  if (!isTimerRunning) {
-    timerSeconds = duration * 60;
-    updateTimerDisplay();
-  }
 }
 
 // ==================== To-Do List Functions ====================
@@ -464,7 +452,6 @@ function setupEventListeners() {
   startTimerBtn.addEventListener("click", startTimer);
   stopTimerBtn.addEventListener("click", stopTimer);
   resetTimerBtn.addEventListener("click", resetTimer);
-  timerDurationEl.addEventListener("change", changeTimerDuration);
 
   // To-Do List
   addTaskBtn.addEventListener("click", addTask);
