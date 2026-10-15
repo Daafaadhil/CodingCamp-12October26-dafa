@@ -1,6 +1,6 @@
 # To-Do List Life Dashboard
 
-> A clean, minimal personal dashboard to help you stay organized, focused, and productive — all in one page.
+> A clean, minimal personal dashboard to help you stay organized, focused, and productive all in one page.
 
 ---
 
