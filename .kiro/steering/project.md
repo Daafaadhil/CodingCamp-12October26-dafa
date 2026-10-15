@@ -1,30 +1,119 @@
-# To-Do List Life Dashboard
+# 🌿 To-Do List Life Dashboard
 
-## Project Overview
+> A clean, minimal personal dashboard to help you stay organized, focused, and productive — all in one page.
 
-A simple dashboard that helps users organize their day. Shows the time, a to-do list, a focus timer, and quick links to websites.
+---
 
-## Technology Stack
+## 📌 Project Overview
 
-- HTML for structure
-- CSS for styling
-- Vanilla JavaScript (no frameworks)
-- Browser Local Storage API for data persistence
+**Life Dashboard** is a browser-based productivity tool built with pure HTML, CSS, and Vanilla JavaScript. No frameworks, no backend, no setup — just open and use.
 
-## Features
+It combines four core tools in one place:
 
-- **Greeting**: Shows current time, date, and personalized greeting
-- **Focus Timer**: Selectable duration (5, 15, 30, 45, 60 minutes)
-- **To-Do List**: Add, edit, complete, and delete tasks
-- **Quick Links**: Save and access favorite websites
-- **Light/Dark Mode**: Toggle between themes
-- **Custom Name**: Personalize your greeting
-- **Prevent Duplicate Tasks**: Warning for duplicate entries
+- A live **clock & greeting** to start your day
+- A **25-minute focus timer** (Pomodoro-style)
+- A **to-do list** to track your tasks
+- **Quick links** to your favorite websites
 
-## Color Theme
+All data is stored locally in the browser using the **LocalStorage API**, so everything persists across sessions without needing a server.
 
-Primary color: Green (#2ecc71)
+---
 
-## Deployment
+## 🛠️ Technology Stack
 
-This project is deployed on GitHub Pages.
+| Layer     | Technology                              |
+| --------- | --------------------------------------- |
+| Structure | HTML5                                   |
+| Styling   | CSS3 (Custom Properties, Flexbox, Grid) |
+| Logic     | Vanilla JavaScript (ES6+)               |
+| Storage   | Browser LocalStorage API                |
+| Hosting   | GitHub Pages                            |
+
+---
+
+## 📁 Project Structure
+
+```
+CodingCamp-12October26-dafa/
+├── index.html          # Main HTML file
+├── css/
+│   └── style.css       # All styles (single CSS file)
+├── js/
+│   └── app.js          # All logic (single JS file)
+├── .kiro/
+│   └── steering/
+│       └── project.md  # Project documentation
+└── .gitignore
+```
+
+---
+
+## ✨ Features
+
+### 🕐 Greeting & Clock
+
+- Displays live time (HH:MM:SS) and full date
+- Greeting message changes based on time of day:
+  - 🌅 **Good Morning** — 05:00 to 11:59
+  - ☀️ **Good Afternoon** — 12:00 to 16:59
+  - 🌆 **Good Evening** — 17:00 to 20:59
+  - 🌙 **Good Night** — 21:00 to 04:59
+
+### ⏱️ Focus Timer
+
+- Fixed **25-minute** Pomodoro timer
+- **Start**, **Stop**, and **Reset** controls
+- Alert notification when the session ends
+
+### ✅ To-Do List
+
+- Add new tasks with a single click or Enter key
+- Edit existing tasks inline
+- Mark tasks as complete with a checkbox
+- Delete tasks individually
+- All tasks saved to **LocalStorage**
+
+### 🔗 Quick Links
+
+- Add custom links with a name and URL
+- Auto-detects icon based on the website (Google, YouTube, GitHub, etc.)
+- Default links: Google 🔍, YouTube 📺, GitHub 💻
+- Delete links anytime
+- Links saved to **LocalStorage**
+
+---
+
+## 🎨 Design System
+
+| Property      | Value                                |
+| ------------- | ------------------------------------ |
+| Primary Color | `#2ecc71` (Emerald Green)            |
+| Primary Dark  | `#27ae60`                            |
+| Primary Light | `#a8e6cf`                            |
+| Background    | `#f0f9f4` (light) / `#1a1a2e` (dark) |
+| Font          | Segoe UI, Tahoma, Verdana            |
+
+---
+
+## 🚀 Challenges Implemented
+
+| #   | Challenge             | Description                                                      |
+| --- | --------------------- | ---------------------------------------------------------------- |
+| 1   | 🌗 Light / Dark Mode  | Toggle between light and green-dark theme, saved to localStorage |
+| 2   | ✏️ Custom Name        | User can set their name to personalize the greeting              |
+| 3   | 🚫 Prevent Duplicates | Warning shown if a task with the same name already exists        |
+
+---
+
+## 🌐 Deployment
+
+- **Platform:** GitHub Pages
+- **Repository:** [github.com/Daafaadhil/CodingCamp-12October26-dafa](https://github.com/Daafaadhil/CodingCamp-12October26-dafa)
+- **Live URL:** [daafaadhil.github.io/CodingCamp-12October26-dafa](https://daafaadhil.github.io/CodingCamp-12October26-dafa)
+
+---
+
+## 👤 Author
+
+**Daafaadhil**
+RevoU Coding Camp — October 2026
