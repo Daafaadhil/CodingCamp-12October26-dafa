@@ -199,7 +199,13 @@ function showDuplicateWarning() {
 
 function addTask() {
   const taskText = taskInput.value.trim();
+  let url = getTasks();
 
+  if (!name || !url) {
+    alert("Please fill in new task");
+    return;
+  }
+  linkNameInput.value = "";
   if (!taskText) return;
 
   // Check for duplicate
