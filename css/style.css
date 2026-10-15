@@ -161,7 +161,8 @@ body {
 
 .timer-display {[data-theme="dark"] .timer-dropdown:hover {
   background: var(--primary-dark);
-  color: white;
+  color: white; 
+  }
 }
 
 .timer-display {
