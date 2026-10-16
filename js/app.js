@@ -199,14 +199,12 @@ function showDuplicateWarning() {
 
 function addTask() {
   const taskText = taskInput.value.trim();
-  let url = getTasks();
 
-  if (!name || !url) {
-    alert("Please fill in new task");
+  if (!taskText) {
+    alert("⚠️ Please enter a task before adding");
+    taskInput.focus();
     return;
   }
-  linkNameInput.value = "";
-  if (!taskText) return;
 
   // Check for duplicate
   if (checkDuplicate(taskText)) {
@@ -338,7 +336,7 @@ function addLink() {
   let url = linkUrlInput.value.trim();
 
   if (!name || !url) {
-    alert("Please fill in both name and URL");
+    alert("⚠️ Please fill in both name and URL");
     return;
   }
 
